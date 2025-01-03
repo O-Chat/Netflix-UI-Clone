@@ -1,0 +1,616 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    overflow-x: hidden;
+    
+}
+.section1{
+    background-image: url(ImagexNetflix/Netflix\ background.jpg);
+    height: 110vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover; /* Scale the image to cover the container */
+    background-position: center; /* Center the image within the container */
+    background-repeat: no-repeat;
+  
+}
+ .black{
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    color: white;
+
+}
+
+.section1 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 80%;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+    
+}
+
+.logo img {
+    height: 80px;
+}
+
+.header-nav{
+    display: flex;
+    flex-direction: row;
+}
+.signin{
+    height: 32px;
+    width: 80px;
+    background-color: red;
+    border-style: solid;
+    border-color: red;
+    color: white;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI","Roboto","Ubuntu","sans-serif";
+    font-size: 15px;
+    font-weight: 600;
+    border-radius:3px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    
+}
+
+
+.mainbox{
+    display: flex;
+    flex-wrap: wrap;
+    position:relative;
+    flex-direction: column;
+    z-index: 3;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 90%;
+   /* margin-left: 433.6px;
+   margin-right: 433.6px; */
+    padding-bottom: 150px;
+    padding-left: 3px;
+    padding-right: 3px;
+    max-width: 600px;
+    /* width: 588px; */
+    box-sizing: border-box;
+}
+.unlimited
+{
+    
+    font-size: 3.5rem;
+    line-height: 1.2; 
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", "Roboto", "Ubuntu", sans-serif;
+    font-weight: 900;
+    text-align: center;
+    color: white; 
+    margin-bottom: 16px; 
+    word-wrap: break-word;
+     
+}
+.starts{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI","Roboto","Ubuntu","sans-serif";
+    line-height: 1.2;
+    margin-bottom: 30px;
+    word-wrap: break-word;
+}
+.ready {
+    font-size: 16px; /* Adjust font size for smaller screens */
+    line-height: 1.4; /* Provide better spacing for multiple lines */
+    word-wrap: break-word;
+    margin-bottom: 16px;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI","Roboto","Ubuntu","sans-serif";
+}
+.Email{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.email1{
+    background-color: rgba(23, 23, 23, 0.497);
+    /* opacity: 1; */
+    height: 50px;
+    width: 350px;
+    border-radius:3px;
+    border-style: solid;
+    border-color: grey;
+    margin-right: 10px;
+    padding-left: 16px;
+    padding-left: 16px;
+}
+input::placeholder {
+    color: rgb(173, 173, 173);
+    opacity: 1;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI","Roboto","Ubuntu","sans-serif";
+    font-weight: 600;
+    font-size: 15px;
+    
+}
+.getstartedbutton, .getstartedbutton2{
+    height: 52px;
+    width: 210px;
+    background-color: red;
+    border-style: solid;
+    border-color: red;
+    color: white;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI","Roboto","Ubuntu","sans-serif";
+    font-size: 25px;
+    font-weight: 600;
+    border-radius:3px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    
+}
+
+
+ .curve {
+    box-sizing: border-box;
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    top: 98vh;
+    margin: auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    /* z-index: 1; */
+    
+    
+}
+
+.blue-curve {
+    position: absolute;
+    height: 95%;
+    width: 100%;
+    /* background: radial-gradient(50% 600% at 50% -420%, rgb(46, 74, 255) 80%, rgb(2, 13, 57) 100%); */
+    background: radial-gradient(
+        50% 500% at 50% -420%, 
+        rgb(36, 59, 206) 70%, /* Light Blue (medium-sized) */
+        /* rgb(3, 12, 73) 80%,   */
+        rgb(0, 3, 12) 100%      /* Black (small portion) */
+    );
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    z-index: 2; /* Blue curve on top */
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    border-bottom: none;
+}
+
+.pink-curve {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);
+    z-index: 1; /* Pink curve below blue curve */
+     border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    border-bottom: none;
+}
+.section2{
+    height: 400px;
+    width: 100%;
+    background-color:black;
+    color: white;
+    
+    padding-top: 25px;
+    padding-left: 150px;
+    padding-right:50px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+
+}
+.s2heading{
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI","Roboto","Ubuntu","sans-serif";
+    color: white; 
+    font-size: 25px;
+    font-weight: 700;
+    box-sizing: border-box;
+    padding-bottom: 15px;
+}
+.dropdown{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+#country{
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+    border-color: grey;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI","Roboto","Ubuntu","sans-serif";
+    font-size: 15px;
+    font-weight: 600;
+    width: 90px;
+    height: 40px;
+    padding-left: 10px;
+}
+#video{
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+    border-color: grey;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI","Roboto","Ubuntu","sans-serif";
+    font-size: 15px;
+    font-weight: 600;
+    width: 120px;
+    height: 40px;
+    padding-left: 10px;
+}
+.carousel{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+}
+.full{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+  /* flex: ; */
+  gap: 26px;
+}
+.full> div{
+    flex: 1;
+}
+
+/* .half {
+    flex: 1; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; 
+    gap: 10px;
+    height: 100%;
+} */
+.item1, .item2, .item3, .item4, .item5, .item6{
+    position: relative;
+    /* overflow: visible; */
+}
+.img1,.img2, .img3, .img4, .img5, .img6{
+    height: 89%;
+    text-align: center;
+    
+}
+.img1>img, 
+.img2>img, 
+.img3>img, 
+.img4>img, 
+.img5>img,
+.img6>img 
+{
+    height: 100%;
+    width: auto;
+    border-radius: 10px;
+   
+}
+.digit1, 
+.digit2, 
+.digit3, 
+.digit4, 
+.digit5,
+.digit6
+{
+    position: absolute;
+    font-size: 110px;
+    bottom: 10.5%;
+    left: -4%;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI","Roboto","Ubuntu","sans-serif";
+    color: black;
+    font-weight: 800;
+    -webkit-text-stroke: 2px white;
+    /* margin-left: ; */
+}
+.blacksticky{
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 75%;
+    bottom: 0%;
+    right: -3%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    padding-bottom: 15px;
+}
+.rbutton{
+    height: 120px;
+    width: 25px;
+   border-color:rgb(37, 37, 37) ;
+    border-radius: 10px;
+    background-color: rgb(37, 37, 37);
+    color: white;
+    margin-left: 10px;
+}
+
+
+
+.section3{
+    height: 400px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding-left: 150px;
+    padding-right: 150px;
+    box-sizing: border-box;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI","Roboto","Ubuntu","sans-serif";
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    /* justify-content: space-between; */
+}
+.mainheading{
+    height: 87px;
+    box-sizing: border-box;
+    padding-top: 30px;
+    /* padding-left: 8px; */
+    font-size: 25px;
+    font-weight: 600;
+    /* width: 30px; */
+    /* height: 30px; */
+    display: flex;
+    flex-direction: column;
+  justify-content: center;
+}
+.heading{
+    padding-top: 25px;
+    padding-left: 18px;
+    padding-right: 18px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.content{
+    padding-left: 18px;
+    padding-right: 18px;
+    color: rgb(201, 199, 199);
+    font-weight: 600;
+}
+.download>.heading{
+    height: 70px;
+}
+.enjoy>.heading{
+    height: 45px;
+}
+.create>.heading{
+    height: 45px;
+}
+.watch>.heading{
+    height: 45px;
+}
+.logo{
+    padding-left: 18px;
+    padding-right: 18px;
+}
+.contents{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 289px;
+    align-items: center;
+    box-sizing: border-box; 
+   
+}
+
+.enjoy, .watch, .download, .create{
+    height: 100%;
+    flex: 1;
+    margin: 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left; 
+    overflow-wrap: break-word; 
+    /* white-space: normal;  */
+    /* width: auto;  */
+    background: linear-gradient(to bottom right, #202540, #230420);
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI","Roboto","Ubuntu","sans-serif";
+    color: white;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+   height: 50%;
+    text-align: right;
+    bottom: 0;
+}
+
+
+.section4{
+    height: 85vh;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI","Roboto","Ubuntu","sans-serif";
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding-left: 150px;
+    padding-right: 150px;
+    box-sizing: border-box;
+}
+
+.frequently{
+    height: 87px;
+    box-sizing: border-box;
+    padding-top: 35px;
+    font-size: 25px;
+    font-weight: 600;
+}
+.boxes{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+}
+.boxes div{
+    height: 100%;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+     
+}
+.b1, .b2, .b3, .b4, .b5, .b6{
+    text-align: left;
+    display: flex;
+    flex-direction: horizontal;
+    box-sizing: border-box;
+    background-color: rgb(46, 46, 46);
+    border-style: solid;
+     border-color:  rgb(46, 46, 46);
+     color: white;
+     font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI","Roboto","Ubuntu","sans-serif";
+     font-size: 24px;
+     font-weight: 600;
+     justify-content: space-between;
+     align-items: center;
+     padding-left: 30px;
+     padding-right: 30px;
+     padding-top: 10px;
+    
+}
+.question, .plus{
+    display: flex;
+    align-items: center;
+}
+.section5{
+    height: 30vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI","Roboto","Ubuntu","sans-serif";
+    padding-left: 150px;
+    padding-right: 150px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+.membership{
+    font-weight: 600;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+.Email2{
+    display: flex;
+    flex-direction: row;
+}
+.email2{
+    background-color: rgba(23, 23, 23, 0.497);
+    /* opacity: 1; */
+    height: 50px;
+    width: 550px;
+    border-radius:3px;
+    border-style: solid;
+    border-color: grey;
+    margin-right: 10px;
+    /* margin-right: 10px; */
+    padding-left: 16px;
+    padding-left: 16px;
+   
+}
+input::placeholder {
+    color: rgb(173, 173, 173);
+    opacity: 1;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI","Roboto","Ubuntu","sans-serif";
+    font-weight: 600;
+    font-size: 15px;
+}
+
+footer{
+    height: 65vh;
+    width: 100%;
+    background-color: black;
+    padding-left: 150px;
+    padding-right: 150px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    color: rgb(188, 185, 185);
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI","Roboto","Ubuntu","sans-serif";
+    /* align-items: center; */
+}
+.call{
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+}
+.link{
+    color: rgb(188, 185, 185);
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI","Roboto","Ubuntu","sans-serif";
+    font-weight: 600;
+}
+.list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    height: 30%;
+    font-size: 15px;
+    font-weight: 600;
+}
+.lang{
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+   align-items: center;
+}
+#lang{
+     background-color: black;
+    color: white;
+    width: 120px;
+    height: 32px;
+    border-style: solid;
+    border-radius: 3px;
+    border-width: 0.5px;
+    border-color:grey;
+    text-align: middle; 
+    background-image: url('ImagexNetflix/output-onlinepngtools.png'); 
+    background-repeat: no-repeat;
+    background-position: 10px center; 
+    background-size: 16px 16px; 
+    padding-left: 33px; 
+    height: 32px; 
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI","Roboto","Ubuntu","sans-serif";
+    font-size: 16px;
+     cursor: pointer;
+     margin-right: 10px;
+}
+.Netflix{
+    font-weight: 500;
+}
